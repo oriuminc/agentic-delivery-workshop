@@ -17,7 +17,8 @@ Each group needs one or two laptops that run the agent. On each one:
 | Context file | `AGENTS.md` at the repo root (nested ones in subfolders also apply) | `CLAUDE.md` at the repo root. A `CLAUDE.md` containing `@AGENTS.md` makes it read the same file |
 | Skills | `.cursor/skills/<name>/SKILL.md` (it also reads `.claude/skills/`) | `.claude/skills/<name>/SKILL.md` |
 | MCP servers | `.cursor/mcp.json` | `.mcp.json` |
-| Subagents | Check your version's docs | `.claude/agents/<name>.md` |
+| Subagents | `.cursor/agents/<name>.md` (it also reads `.claude/agents/`) | `.claude/agents/<name>.md` |
+| An agent in its own worktree | Start the prompt with `/worktree`, or use Worktrees in the Agents window | Make the worktree yourself ([cheat sheet](git-worktrees.md)) and start Claude Code in it |
 | Plan mode | Plan mode in the agent's mode picker | Shift+Tab until plan mode is on |
 
 Keep `AGENTS.md` as the one source of truth and point `CLAUDE.md` at it, so both tools read the same instructions.

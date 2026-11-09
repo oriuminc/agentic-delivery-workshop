@@ -11,6 +11,8 @@ Plan a bigger ticket twice:
   - **An MCP** for Jira or Bitbucket, so the agent can look up the ticket, linked issues and past PRs. Setup in [mcp/](mcp/).
   - **A skill** that carries reference docs the agent can't read from the code. Starter in [skills/reference-docs/](skills/reference-docs/).
 
+Start both sides from the same branch: if you're keeping your Lab 1 `AGENTS.md`, have it on both. The new source is the only difference.
+
 Both plans end with a list of every assumption the agent made. That list is where the difference shows: without the source it has to guess, with it, it can look things up.
 
 ## Steps

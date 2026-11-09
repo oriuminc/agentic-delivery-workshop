@@ -22,6 +22,8 @@ A learnings log ([LEARNINGS.md](LEARNINGS.md)) is the longer-form, always-on kin
 3. **Ticket B,** a similar one, with the new rules and skill. Keep the ticket A corrections list next to you and watch for repeats.
 4. **Compare with ticket A.** Did the skill fire? Which helped more, the rules or the skill?
 
+   To tell whether the skill fired, watch for the agent reading its `SKILL.md`, or ask: *"Which skills did you use in this session?"*
+
 ## Where skills go
 
 - **Cursor:** `.cursor/skills/<name>/SKILL.md` (Cursor also reads `.claude/skills/`)

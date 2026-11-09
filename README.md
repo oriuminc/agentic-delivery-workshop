@@ -4,7 +4,7 @@ Prompts, templates and starter files for the workshop's four labs. Copy what you
 
 ## How the day runs
 
-Each lab is a short talk, then your group works a real ticket on one or two laptops, then the room compares notes. Each lab compares the agent **with** one part of the harness against **without** it, on the same ticket with the same prompt.
+Each lab is a short talk, then your group works a real ticket on one or two laptops, then the room compares notes. Labs 1 and 2 run the same ticket **with** one part of the harness and **without** it, using the same prompt. Lab 3 compares a second ticket against the first, and Lab 4 runs agents in parallel.
 
 Keep three questions in mind in every lab:
 

@@ -39,8 +39,9 @@ The main agent acts as the tech lead: it writes the contract, gives each subagen
 
 ## Tool notes
 
-- **Claude Code:** subagents run in your working folder by default. Copy [part-builder.md](part-builder.md) to `.claude/agents/` to give each one its own worktree.
-- **Cursor:** use Worktrees in the Agents window, or the `/worktree` command, so each agent gets its own checkout. If you start the agents yourself, have one write the contract first, then give each of the others the contract and its part.
+- **Subagents share your checkout by default** in both tools. Ask for a worktree each, as the prompt in [prompts.md](prompts.md) does.
+- **Cursor:** copy [part-builder.md](part-builder.md) to `.cursor/agents/`. Cursor ignores its `isolation` line, so the request in the prompt is what gives each one a worktree. For step 1, start each task's chat with `/worktree`, and bring a result back with `/apply-worktree`.
+- **Claude Code:** copy [part-builder.md](part-builder.md) to `.claude/agents/`. Its `isolation: worktree` line gives each subagent its own worktree. For step 1, make two worktrees with the [cheat sheet](../00-setup/git-worktrees.md) and start Claude Code in each.
 - **Gotcha:** a new worktree branches from your default branch, so an uncommitted `CONTRACTS.md` won't be in it. Commit it first, or put the contract in each brief.
 - **Commit:** each agent must commit its work, or the merge finds nothing.
 

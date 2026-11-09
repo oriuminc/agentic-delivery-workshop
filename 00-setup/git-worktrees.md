@@ -10,7 +10,7 @@ git worktree add ../myrepo-with -b lab-with
 git worktree add ../myrepo-without -b lab-without
 ```
 
-Open each folder in its own editor window, and start one agent in each.
+Open each folder in its own editor window, and start one agent in each. On Windows, run these in Git Bash.
 
 ## Make the "without" side really empty
 
@@ -19,7 +19,7 @@ In the `without` checkout, move any instruction files aside. Don't commit this.
 ```bash
 cd ../myrepo-without
 mkdir -p ../aside
-mv AGENTS.md CLAUDE.md ../aside/ 2>/dev/null
+mv AGENTS.md CLAUDE.md .cursorrules ../aside/ 2>/dev/null
 mv .cursor/rules .claude/skills .cursor/skills ../aside/ 2>/dev/null
 ```
 

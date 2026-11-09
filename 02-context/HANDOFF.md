@@ -6,7 +6,7 @@ End a phase of a long task by asking the agent to write this file, then start a 
 > Write HANDOFF.md: what's done, decisions and why, files touched, what's next, open questions. Under 40 lines.
 
 **Prompt to start the next chat**
-> Read PLAN.md and HANDOFF.md, then do the next phase.
+> Read the plan and HANDOFF.md, then do the next phase.
 
 ---
 
@@ -23,7 +23,7 @@ End a phase of a long task by asking the agent to write this file, then start a 
 - `<path>`: <what changed>
 
 ## What's next
-- <the next phase, from PLAN.md>
+- <the next phase, from the plan>
 
 ## Open questions
 - <anything unresolved>
