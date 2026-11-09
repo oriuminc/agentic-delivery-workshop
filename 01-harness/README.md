@@ -1,6 +1,6 @@
 # Lab 1: harness progression
 
-Same model, same ticket, same prompt. Only the harness changes.
+Same model, same ticket, same prompt. Only its setup changes.
 
 ## The activity
 
@@ -28,9 +28,9 @@ Then compare the two results.
    > Implement this ticket:
    > <pasted ticket text>
 
-   Don't correct it mid-run. If it asks a question, answer in one line and note it. On the `with` side, approving its plan is allowed: that's part of the harness.
+   Don't correct it mid-run. If it asks a question, answer in one line and note it. On the `with` side, approving its plan is allowed: that's part of the setup.
 3. **Compare.** Read both diffs side by side, not the agent's summaries. Answer the three questions.
 
 ## Why every piece goes in the file
 
-Keep the prompt identical on both sides, so the harness is the only difference. It's also the habit worth keeping: the file carries the instructions, so nobody has to remember to type them.
+Keep the prompt identical on both sides, so the setup is the only difference. It's also the habit worth keeping: the file carries the instructions, so nobody has to remember to type them.

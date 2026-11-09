@@ -1,10 +1,12 @@
 # Agentic Delivery Workshop: kit
 
+Your AI coding tool, Cursor or Claude Code, is the harness around the model: the loop, the tools and the modes. It already looks for a context file, a skills folder and an MCP config. This kit helps you fill them in for your repo.
+
 Prompts, templates and starter files for the workshop's four labs. Copy what you need into your own repo as you go. Nothing here is specific to one team or codebase: every file uses placeholders like `<test command>` that you fill in for your repo.
 
 ## How the day runs
 
-Each lab is a short talk, then your group works a real ticket on one or two laptops, then the room compares notes. Labs 1 and 2 run the same ticket **with** one part of the harness and **without** it, using the same prompt. Lab 3 compares a second ticket against the first, and Lab 4 runs agents in parallel.
+Each lab is a short talk, then your group works a real ticket on one or two laptops, then the room compares notes. Labs 1 and 2 run the same ticket **with** one part of the setup and **without** it, using the same prompt. Lab 3 compares a second ticket against the first, and Lab 4 runs agents in parallel.
 
 Keep three questions in mind in every lab:
 
