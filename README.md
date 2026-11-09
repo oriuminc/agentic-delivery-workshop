@@ -27,3 +27,7 @@ Keep three questions in mind in every lab:
 - **Nothing gets pushed during the workshop.** Lab branches and worktrees stay on the laptop. If something works, take it back to your team through your normal PR process.
 - **Tokens never go in files.** MCP configs read them from environment variables.
 - **Works with Cursor and Claude Code.** Where the tools differ, each folder's README says how.
+
+## Questions after the workshop
+
+Stuck on any of it, or want a second opinion on your `AGENTS.md` or a skill? Email smith.milner@orium.com.
