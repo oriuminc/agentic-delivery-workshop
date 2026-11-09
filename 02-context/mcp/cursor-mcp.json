@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+    },
+    "bitbucket": {
+      "command": "npx",
+      "args": ["-y", "bitbucket-mcp@latest"],
+      "env": {
+        "BITBUCKET_URL": "https://api.bitbucket.org/2.0",
+        "BITBUCKET_WORKSPACE": "${env:BITBUCKET_WORKSPACE}",
+        "BITBUCKET_USERNAME": "${env:BITBUCKET_USERNAME}",
+        "BITBUCKET_PASSWORD": "${env:BITBUCKET_PASSWORD}"
+      }
+    }
+  }
+}
