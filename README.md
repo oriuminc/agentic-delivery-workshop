@@ -6,7 +6,7 @@ Prompts, templates and starter files for the workshop's four labs. Copy what you
 
 ## How the day runs
 
-Each lab is a short talk, then your group works a real ticket on one or two laptops, then the room compares notes. Labs 1 and 2 run the same ticket **with** one part of the setup and **without** it, using the same prompt. Lab 3 compares a second ticket against the first, and Lab 4 runs agents in parallel.
+Each lab is a short talk, then your group works a real ticket on one or two laptops, then the room compares notes. Labs 1 and 2 run the same ticket twice with the same prompt: first **without** one part of the setup, then **with** it. Lab 3 compares a second ticket against the first, and Lab 4 plans two tasks at once and writes a contract for splitting one.
 
 Keep three questions in mind in every lab:
 

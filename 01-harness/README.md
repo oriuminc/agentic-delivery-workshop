@@ -4,12 +4,12 @@ Same model, same ticket, same prompt. Only its setup changes.
 
 ## The activity
 
-Run one ticket twice:
+Run one ticket twice, one run after the other:
 
-- **Without:** your ticket, pasted in, and nothing else. Move any context files aside first.
-- **With:** the same ticket and the same prompt, plus an `AGENTS.md` with all three pieces below.
+1. **Without:** your ticket, pasted in, and nothing else. Move any context files aside first.
+2. **With:** the same ticket and the same prompt, after you've added an `AGENTS.md` with all three pieces below.
 
-Then compare the two results.
+Then compare how the two runs went. Not the code: the questions it asked, the guesses it made, and how often you had to step in.
 
 ## The three pieces
 
@@ -23,13 +23,15 @@ Then compare the two results.
 
 ## Steps
 
-1. **Set up.** Pick one ticket with clear acceptance criteria. Make a `with` and a `without` branch, or two worktrees ([cheat sheet](../00-setup/git-worktrees.md)). On `without`, move context files aside. On `with`, start from a generated draft (below), cut it down, then add the three pieces and fill them in. Add `CLAUDE.md` next to it.
-2. **Run both.** A new chat on each side, with the same prompt:
+1. **Without (first half).** Pick one ticket with clear acceptance criteria. Move aside `AGENTS.md`, `CLAUDE.md`, `.cursor/rules` and any skills folder ([how](../00-setup/git-worktrees.md#make-the-without-side-really-empty)). Start a new chat:
    > Implement this ticket:
    > <pasted ticket text>
 
-   Don't correct it mid-run. If it asks a question, answer in one line and note it. On the `with` side, approving its plan is allowed: that's part of the setup.
-3. **Compare.** Read both diffs side by side, not the agent's summaries. Answer the three questions.
+   Don't correct it mid-run. Write down every question it asks, every guess it makes and every time you have to step in. That list is the point of this half. The run doesn't have to finish.
+2. **With (second half).** Halfway through the lab, stop wherever the first run got to and start your `AGENTS.md`: a generated draft (below), cut down, plus the three pieces, filled in with the list from the first run. Add `CLAUDE.md` next to it. Then a new chat, the same ticket and the same prompt, keeping the same list. Approving its plan is allowed: that's part of the setup.
+3. **Compare the process.** Which questions from the first run didn't come up again, because the file answered them? Where did you still step in? Did it plan, run the checks, stop when stuck? Answer the three questions.
+
+One checkout is enough, since the runs happen one after the other. To keep both runs open side by side, use two worktrees ([cheat sheet](../00-setup/git-worktrees.md)).
 
 ## Start from a draft: doing beats perfect
 
@@ -43,4 +45,4 @@ Then cut it down as a group. Generated drafts describe the codebase at length; k
 
 ## Why every piece goes in the file
 
-Keep the prompt identical on both sides, so the setup is the only difference. It's also the habit worth keeping: the file carries the instructions, so nobody has to remember to type them.
+Keep the prompt identical on both runs, so the setup is the only difference. It's also the habit worth keeping: the file carries the instructions, so nobody has to remember to type them.

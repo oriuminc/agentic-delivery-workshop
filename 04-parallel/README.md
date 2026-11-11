@@ -32,10 +32,11 @@ The main agent acts as the tech lead: it writes the contract, gives each subagen
 
 ## The activity
 
-1. **Two tasks at once.** Two small tasks that don't touch each other. Two worktrees, one agent each. Did they really not overlap?
-2. **Split one feature,** into three parts that share something (a type, a route, a component's props). The agent drafts `CONTRACTS.md`; you check and approve it.
-3. **One subagent per part,** each in its own worktree, each given the contract and only its part.
-4. **Merge in order,** running the check after each merge. Run `git status` and the checks before anyone says done.
+1. **Two tasks at once, plan only.** Two small tasks that don't touch each other, one agent each (two worktrees or two chats). Ask each for a plan, not code. Do the two plans touch any of the same files?
+2. **Split one feature and write the contract.** Pick a feature that splits into parts that share something (a type, a route, a component's props). The agent drafts `CONTRACTS.md`; you check and approve it. Nothing gets built.
+3. **Bonus: make it repeatable.** Turn what you just did into a skill that drafts a contract for any feature, using the [session-to-skill prompt](../03-memory/session-to-skill.md).
+
+Running the parts in parallel and merging them is the next step after the workshop: the full prompt is in [prompts.md](prompts.md), and the merge steps are in the [cheat sheet](../00-setup/git-worktrees.md#merge-a-part-back-lab-4).
 
 ## Tool notes
 
