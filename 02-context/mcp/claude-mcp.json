@@ -6,13 +6,26 @@
     },
     "bitbucket": {
       "command": "npx",
-      "args": ["-y", "bitbucket-mcp@latest"],
+      "args": [
+        "-y",
+        "bitbucket-mcp@latest"
+      ],
       "env": {
         "BITBUCKET_URL": "https://api.bitbucket.org/2.0",
         "BITBUCKET_WORKSPACE": "${BITBUCKET_WORKSPACE}",
         "BITBUCKET_USERNAME": "${BITBUCKET_USERNAME}",
         "BITBUCKET_PASSWORD": "${BITBUCKET_PASSWORD}"
       }
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
     }
   }
 }

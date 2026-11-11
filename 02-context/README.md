@@ -24,7 +24,21 @@ Both plans end with a list of every assumption the agent made. That list is wher
    > Here's the ticket: <pasted text>. Write a plan for it. Follow how we've done similar changes before. End with a list of every assumption you made.
 4. **Compare** the two plans and the two assumption lists. Answer the three questions.
 
+**QA engineers:** if your QA platform has an MCP (Spur does), connect it as your source and ask for tests from the ticket's acceptance criteria, with and without it.
+
 **Can't connect an MCP?** Take the skill route, or paste the same information into the `with` side by hand: the linked tickets and a similar past PR.
+
+## Put each guess where it lives
+
+Every guess on the assumptions list is a gap in the spec. Send each one back to where it belongs, then plan again:
+
+| The guess is… | Fix it in |
+|---|---|
+| Only true for this change | The ticket |
+| True for every change | `AGENTS.md`, as a rule |
+| A choice with trade-offs | A decision record (ADR): what you chose and why |
+
+Fix the spec and regenerate, rather than patching the code by hand.
 
 ## A technique for long tasks: hand off
 

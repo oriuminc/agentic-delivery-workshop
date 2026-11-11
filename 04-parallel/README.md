@@ -45,6 +45,18 @@ The main agent acts as the tech lead: it writes the contract, gives each subagen
 - **Gotcha:** a new worktree branches from your default branch, so an uncommitted `CONTRACTS.md` won't be in it. Commit it first, or put the contract in each brief.
 - **Commit:** each agent must commit its work, or the merge finds nothing.
 
+## Keep several agents in view
+
+You can't read five chats at once. Use one view that shows which agent is waiting on you, and step in there:
+
+- **Claude Code:** `claude agents` opens agent view: every session in one place, with the ones that need input on top.
+- **Cursor:** the Agents window runs several agents side by side, each in its own worktree.
+- **Any terminal:** [Herdr](https://github.com/brac/herdr) shows every agent CLI in one place: working, blocked or done.
+
+## Let agents run inside a box
+
+Agents running on their own need a boundary that isn't your laptop. [Docker Sandboxes](https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/) run each agent in its own small virtual machine, with its own files and Docker, away from yours. They support Claude Code and Cursor, among others. Match the leash to the risk: the more an agent can reach, the closer a person sits to the gate. Keep keys out of the agent's reach, and never let the agent that wrote a change approve it.
+
 ## When not to
 
 - **Small tasks:** splitting costs more than it saves.

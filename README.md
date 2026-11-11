@@ -20,7 +20,7 @@ Keep three questions in mind in every lab:
 |--------|-----|---------------|
 | [`00-setup/`](00-setup/) | Before you start | Laptop checklist, where each tool keeps things, a git worktree cheat sheet |
 | [`01-harness/`](01-harness/) | Lab 1: harness progression | A starter `AGENTS.md`, a one-line `CLAUDE.md`, and the three pieces to copy in |
-| [`02-context/`](02-context/) | Lab 2: context engineering | Jira and Bitbucket MCP configs, a reference-docs skill, a handoff template |
+| [`02-context/`](02-context/) | Lab 2: context engineering | MCP configs (Jira, Bitbucket, Context7, Playwright), a reference-docs skill, a handoff template |
 | [`03-memory/`](03-memory/) | Lab 3: memory | Prompts for turning corrections into rules and a skill, a skill template, three starter skills |
 | [`04-parallel/`](04-parallel/) | Lab 4: parallelization | The contract-first prompt, a `CONTRACTS.md` template, a subagent definition |
 

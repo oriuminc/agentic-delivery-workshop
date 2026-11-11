@@ -1,6 +1,6 @@
 # Connecting an MCP
 
-An MCP server connects the agent to one system, like Jira or Bitbucket. The agent sees its tools and calls them when it needs data. Connect only what you'll use: every server adds tools the agent has to choose between.
+An MCP server connects the agent to one system, like Jira or Bitbucket. Why not just paste? A paste is a snapshot you have to remember to update. An MCP looks things up when the agent needs them. The agent sees its tools and calls them when it needs data. Connect only what you'll use: every server adds tools the agent has to choose between.
 
 **Never put a token in a config file.** These configs read tokens from environment variables. Set them in your shell profile, then quit your editor completely and reopen it, so it picks them up.
 
@@ -30,6 +30,26 @@ Check Atlassian's setup guide if the URL has changed: <https://support.atlassian
    ```
    On Windows, use `setx BITBUCKET_WORKSPACE "<your-workspace>"` and so on, in a new terminal.
 3. Add the `bitbucket` entry from [cursor-mcp.json](cursor-mcp.json) (Cursor, in `.cursor/mcp.json`) or [claude-mcp.json](claude-mcp.json) (Claude Code, in `.mcp.json`).
+
+## Context7: current library docs
+
+[Context7](https://github.com/upstash/context7) gives the agent up-to-date docs for the libraries you use, so it stops inventing APIs. No token needed to start (an optional free API key raises the rate limit).
+
+- **Cursor:** add the `context7` entry from [cursor-mcp.json](cursor-mcp.json).
+- **Claude Code:** `claude mcp add --transport http context7 https://mcp.context7.com/mcp`
+
+Then add a line to `AGENTS.md`: *"Use Context7 for library and framework docs before writing code against them."*
+
+## Playwright: check the UI in a browser
+
+[Playwright MCP](https://github.com/microsoft/playwright-mcp) lets the agent open your app in a browser, click through it and check what it built.
+
+- **Cursor:** add the `playwright` entry from [cursor-mcp.json](cursor-mcp.json).
+- **Claude Code:** `claude mcp add playwright -- npx @playwright/mcp@latest`
+
+## Your QA tool
+
+Many QA platforms now have an MCP. Spur, for example, connects at `https://api.spurnow.com/mcp` and signs you in with your Spur account. Check your platform's docs.
 
 ## Check it works
 
