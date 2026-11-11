@@ -23,6 +23,6 @@ Each group needs one or two laptops that run the agent. On each one:
 
 Keep `AGENTS.md` as the one source of truth and point `CLAUDE.md` at it, so both tools read the same instructions.
 
-## Running "with" and "without" side by side
+## Running "without" and then "with"
 
-Most labs run the same ticket twice: once with a change, once without. Two laptops make that easy. On one laptop, use two worktrees, one editor window each. See [git-worktrees.md](git-worktrees.md).
+Labs 1 and 2 run the same ticket twice, one run after the other: first without a change, then with it. One checkout is enough. If you want both runs open at once, use two worktrees, one editor window each. See [git-worktrees.md](git-worktrees.md).
