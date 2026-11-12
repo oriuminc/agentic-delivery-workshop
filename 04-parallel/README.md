@@ -13,7 +13,7 @@ Two ways to go parallel:
 
 ## Collisions are silent
 
-A subagent can't stop and ask you. When parallel work collides, it usually doesn't say so: one agent overwrites another's edit, two define the same type slightly differently, or one "fixes" a file another is halfway through. The main agent may still report that every part is done. So look for it:
+A subagent can't stop and ask you. When parallel work collides, nothing announces it: one agent overwrites another's edit, two define the same type slightly differently, or one "fixes" a file another is halfway through. The main agent may still report that every part is done. So look for it:
 
 - Run the check command. Typecheck and tests are where collisions show up.
 - Run `git status` and read the diff, not the summary.
@@ -28,7 +28,7 @@ The fix is the same as for two developers: agree on the connections before anyon
 - **File owners:** each shared file (routes, index exports, `package.json`, config) gets exactly one owner.
 - **Merge order:** what others depend on goes first, e.g. data, then API, then UI.
 
-The main agent acts as the tech lead: it writes the contract, gives each subagent the contract and its part, checks each result against it, and merges in order. Prompts: [prompts.md](prompts.md).
+The main agent acts as the tech lead: it writes the contract, hands each subagent one part to build, checks every result against the contract, then merges in order. Prompts: [prompts.md](prompts.md).
 
 ## The activity
 
@@ -56,7 +56,7 @@ You can't read five chats at once. Use one view that shows which agent is waitin
 
 ## Let agents run inside a box
 
-Agents running on their own need a boundary that isn't your laptop. [Docker Sandboxes](https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/) run each agent in its own small virtual machine, with its own files and Docker, away from yours. They support Claude Code and Cursor, among others. Match the leash to the risk: the more an agent can reach, the closer a person sits to the gate. Keep keys out of the agent's reach, and never let the agent that wrote a change approve it.
+Agents running on their own need a boundary that isn't your laptop. [Docker Sandboxes](https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/) run each agent in its own small virtual machine, with its own files and Docker, away from yours. They support Claude Code and Cursor, among others. Match the boundary to the risk: the more an agent can reach, the closer someone has to watch. Keep keys out of its reach, and never let the agent that wrote a change approve it.
 
 ## When not to
 

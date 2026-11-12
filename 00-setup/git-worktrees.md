@@ -12,7 +12,7 @@ git worktree add ../myrepo-without -b lab-without
 
 Open each folder in its own editor window, and start one agent in each. On Windows, run these in Git Bash.
 
-## Make the "without" side really empty
+## Empty the "without" side
 
 In the `without` checkout, move any instruction files aside. Don't commit this.
 

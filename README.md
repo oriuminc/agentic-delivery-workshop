@@ -2,7 +2,7 @@
 
 Your AI coding tool, Cursor or Claude Code, is the harness around the model: the loop, the tools and the modes. It already looks for a context file, a skills folder and an MCP config. This kit helps you fill them in for your repo.
 
-Prompts, templates and starter files for the workshop's four labs. Copy what you need into your own repo as you go. Nothing here is specific to one team or codebase: every file uses placeholders like `<test command>` that you fill in for your repo.
+Prompts, templates and starter files for the workshop's four labs. Copy what you need into your own repo as you go. Nothing here is specific to one team or codebase: every file uses placeholders like `<test command>` for you to fill in.
 
 ## How the day runs
 

@@ -1,6 +1,6 @@
 # Connecting an MCP
 
-An MCP server connects the agent to one system, like Jira or Bitbucket. Why not just paste? A paste is a snapshot you have to remember to update. An MCP looks things up when the agent needs them. The agent sees its tools and calls them when it needs data. Connect only what you'll use: every server adds tools the agent has to choose between.
+An MCP server connects the agent to one system, like Jira or Bitbucket. Why not just paste the details in? A paste is a snapshot you have to remember to update; an MCP is a set of tools the agent calls when it needs the data. Connect only what you'll use: every server adds tools the agent has to choose between.
 
 **Never put a token in a config file.** These configs read tokens from environment variables. Set them in your shell profile, then quit your editor completely and reopen it, so it picks them up.
 
@@ -28,7 +28,7 @@ Check Atlassian's setup guide if the URL has changed: <https://support.atlassian
    export BITBUCKET_USERNAME="<your Atlassian account email>"
    export BITBUCKET_PASSWORD="<your API token or app password>"
    ```
-   On Windows, use `setx BITBUCKET_WORKSPACE "<your-workspace>"` and so on, in a new terminal.
+   On Windows, use `setx BITBUCKET_WORKSPACE "<your-workspace>"` for each one, then open a new terminal.
 3. Add the `bitbucket` entry from [cursor-mcp.json](cursor-mcp.json) (Cursor, in `.cursor/mcp.json`) or [claude-mcp.json](claude-mcp.json) (Claude Code, in `.mcp.json`).
 
 ## Context7: current library docs

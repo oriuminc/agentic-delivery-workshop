@@ -1,12 +1,12 @@
 # Lab 3: memory
 
-Every session starts empty. Memory is what you write down so the next one doesn't.
+Every session starts from scratch. Memory is what you write down so the next one doesn't have to.
 
 ## Two kinds of memory
 
 | Kind | Where it lives | Loaded | Keep it |
 |------|----------------|--------|---------|
-| **Rules** | `AGENTS.md` | Every session | Short: every line costs room in every session |
+| **Rules** | `AGENTS.md` | Every session | Short: every line costs room in all of them |
 | **Skills** | `SKILL.md` in your tool's skills folder | Only when the task matches, or when you call it by name | Focused: the description has to say when to use it |
 
 A learnings log ([LEARNINGS.md](LEARNINGS.md)) is the longer-form, always-on kind: decisions and why.
@@ -33,7 +33,7 @@ The folder name should match the skill's `name`.
 
 ## Starter skills
 
-A three-step workflow, simplified from the setup Orium's delivery teams use. Adapt them; don't adopt them wholesale.
+Three skills that make one workflow, simplified from the setup Orium's delivery teams use. Adapt them; don't adopt them wholesale.
 
 | Skill | What it does |
 |-------|--------------|
@@ -45,4 +45,4 @@ A three-step workflow, simplified from the setup Orium's delivery teams use. Ada
 
 - **The skill never fires.** The description is too vague. Rewrite it to say what the skill does, then "Use when…". Or call it by name.
 - **The skill is too long and the output got worse.** Move reference material into a separate file the skill links to.
-- **Ten vague rules.** Keep the two or three that will come up again. Three sharp rules beat ten vague ones.
+- **You end up with ten vague rules.** Keep only the two or three that will come up again. A short list people follow beats a long one nobody reads.
