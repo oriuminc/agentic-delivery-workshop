@@ -33,3 +33,7 @@ Keep three questions in mind in every lab:
 ## Questions after the workshop
 
 Stuck on any of it, or want a second opinion on your `AGENTS.md` or a skill? Email smith.milner@orium.com.
+
+## License
+
+Copyright (c) 2026 Myplanet Internet Solutions Ltd. This kit is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) — copy it, adapt it and use it commercially, as long as you credit the source. Full terms in [`LICENSE`](LICENSE).
