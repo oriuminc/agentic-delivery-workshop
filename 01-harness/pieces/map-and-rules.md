@@ -15,5 +15,5 @@
 
 **Writing it well**
 - **Map** stops it inventing a folder structure. List only the folders that matter.
-- **Rules** cover only where your repo differs from what most code does. Skip generic advice like "write clean code": it already does that.
+- **Rules** cover only where your repo differs from what most code does. Skip generic advice like "write clean code"; it already tries to.
 - Keep lines specific: "Use Vitest, not Jest", not "write good tests".

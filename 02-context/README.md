@@ -1,15 +1,15 @@
 # Lab 2: context engineering
 
-Connect the agent to what it's missing, and only what earns its place.
+Connect the agent to what it's missing, and only to what earns its place.
 
 ## The activity: count the guesses
 
-Plan one ticket twice, one after the other: first with only what the agent can already see, then again after you connect one new source. Your group's choice of source:
-  - **An MCP** for Jira or Bitbucket, so the agent can look up the ticket, linked issues and past PRs. Setup in [mcp/](mcp/).
-  - **A skill** that carries reference docs the agent can't read from the code. Starter in [skills/reference-docs/](skills/reference-docs/).
+Plan one ticket twice, one after the other: first with only what the agent can already see, then again after you connect one new source. Your group picks the source:
 
+- **An MCP** for Jira or Bitbucket, so the agent can look up the ticket, linked issues and past PRs. Setup in [mcp/](mcp/).
+- **A skill** that carries reference docs the agent can't read from the code. Starter in [skills/reference-docs/](skills/reference-docs/).
 
-Both plans end with a list of every assumption the agent made. That list is where the difference shows: without the source it has to guess, with it, it can look things up.
+Both plans end with a list of every assumption the agent made. That list is where the difference shows: without the source the agent guesses; with it, it looks things up.
 
 ## Steps
 
@@ -19,10 +19,10 @@ Both plans end with a list of every assumption the agent made. That list is wher
    > Here's the ticket: <pasted text>. Write a plan for it. Follow how we've done similar changes before. End with a list of every assumption you made.
 
    Save the plan and its assumption list.
-3. **Connect one source:** an MCP or a skill. Check it works (*"Show me ticket <KEY>"*, *"List the last 5 merged PRs that touched <area>"*, or a question the skill should answer). Add a line to `AGENTS.md` saying when to use it, from [authoritative-sources.md](authoritative-sources.md).
+3. **Connect one source:** an MCP or a skill. Check it works (*"Show me ticket <KEY>"*, *"List the last 5 merged PRs that touched <area>"*, or a question the skill should answer). Add a line to `AGENTS.md` saying when to use it; [authoritative-sources.md](authoritative-sources.md) has the wording.
 4. **Plan it again and compare.** A new chat, the same prompt. Then compare the two assumption lists item by item: which guesses did the source answer? Answer the three questions.
 
-**QA engineers:** if your QA platform has an MCP (Spur does), connect it as your source and ask for tests from the ticket's acceptance criteria, before and after you connect it.
+**QA engineers:** if your QA platform has an MCP (Spur does), use it as your new source, and ask both plans for tests built from the ticket's acceptance criteria.
 
 **Can't connect an MCP?** Take the skill route, or paste the same information in by hand for the second plan: the linked tickets and a similar past PR.
 
