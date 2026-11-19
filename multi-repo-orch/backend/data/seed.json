@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "id": "seed-welcome",
+      "title": "Welcome to Folio",
+      "body": "A quiet place for your thoughts.\n\nCreate an entry with the New entry button, edit it here, and save with ⌘S.",
+      "createdAt": "2026-11-14T09:00:00.000Z",
+      "updatedAt": "2026-11-14T09:00:00.000Z"
+    },
+    {
+      "id": "seed-morning",
+      "title": "Morning pages",
+      "body": "Coffee, rain on the window, and a long list of things I want to build this week.",
+      "createdAt": "2026-11-15T07:30:00.000Z",
+      "updatedAt": "2026-11-15T07:42:00.000Z"
+    }
+  ]
+}
